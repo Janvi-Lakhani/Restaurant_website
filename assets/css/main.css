@@ -1,0 +1,164 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  background-color: #171819;
+  padding: 12px 0;
+  font-size: 12px;
+  color: white;
+}
+header .head-0 {
+  display: flex;
+  flex-wrap: wrap;
+}
+header i {
+  margin-right: 4px;
+}
+header span {
+  font-weight: 400;
+}
+header span a {
+  color: white;
+}
+
+nav {
+  background-color: #0e0d0c;
+  padding: 15px 0;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  position: sticky;
+  z-index: 999;
+  top: -0.2%;
+  width: 100%;
+}
+nav .navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+nav .navigation a:hover {
+  color: #E4C590;
+  transition: all 0.2s;
+}
+nav .btn {
+  background-color: transparent;
+  padding: 10px 15px;
+  border: 1px solid #E4C590;
+  border-radius: 0;
+  font-size: 12px;
+  letter-spacing: 3px;
+  padding: 14px 25px;
+  color: #E4C590;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+nav .btn:hover {
+  color: #141417;
+  background-color: #E4C590;
+  transition: all 0.2s;
+}
+
+.sec-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/assets/img/slider-1.webp");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 250px 0;
+  text-align: center;
+}
+.sec-1 .head-b {
+  color: white;
+  font-family: forum;
+  font-size: 60px;
+  font-size: 120px;
+}
+
+.head-1 {
+  color: #E4C590;
+  filter: brightness(100%);
+  font-size: 12px;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.head-b {
+  color: white;
+  font-family: forum;
+  font-size: 60px;
+}
+
+.text-slider {
+  color: white;
+  font-size: 20px;
+}
+
+.btn {
+  background-color: transparent;
+  padding: 10px 15px;
+  border: 1px solid #E4C590;
+  border-radius: 0;
+  font-size: 12px;
+  letter-spacing: 3px;
+  padding: 14px 25px;
+  color: #E4C590;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.btn:hover {
+  color: #141417;
+  background-color: #E4C590;
+  transition: all 0.2s;
+}
+
+.flavoures .head-1 a:hover {
+  color: #D2AC6A;
+}
+
+.specialities::after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  background-image: url("../img/Restaurant-Pattern-2.webp");
+  background-size: 12px auto;
+  background-position: left;
+  background-repeat: repeat-y;
+  background-size: 12px auto;
+}
+
+.events .head-1 a:hover {
+  color: #D2AC6A;
+}
+.events .img-2::after {
+  position: absolute;
+  box-sizing: border-box;
+  content: "";
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4509803922);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+.events .img-2:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s;
+}/*# sourceMappingURL=main.css.map */

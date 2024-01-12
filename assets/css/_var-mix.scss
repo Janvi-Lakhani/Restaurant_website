@@ -1,0 +1,49 @@
+// -----colors------
+$brown:#E4C590;
+$brown-1:#D2AC6A;
+$white:#ffff;
+$grey-head:#BCBDBE;
+$black:#141417;
+$grey-text: #676767;
+$black-bg:#0e0d0c;
+
+
+// ------common---------
+@mixin d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin btn{
+    background-color: transparent;
+    padding: 10px 15px;
+    border: 1px solid $brown;
+    border-radius: 0;
+    font-size: 12px;
+    letter-spacing: 3px;
+    padding: 14px 25px;
+    color: $brown;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:hover{
+        color: $black;
+        background-color: $brown;
+        transition: all 0.2s;
+    }
+}
+
+
+@mixin head-small{
+    color: $brown;
+    filter: brightness(100%);
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+@mixin head-main{
+    color: $white;
+    font-family: forum;
+    font-size: 60px;
+}
