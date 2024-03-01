@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticrou-Restro</title>
+
+    <!-- -------fav-icon----- -->
+    <link rel="icon" href="assets/img/favicon.png">
+    <!-- -----bootstrap-------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- ---animkate.css--------- -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="Assets/css/all.min.css">
+    <!-- -------fonts---- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Forum&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/media.css">
+    <!-- ----stylesheet---- -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- -----------header-start--------- -->
+    <div class="Responsive-menu ">
+        <a href="#">
+            <i onclick="menuClose()" class="fa-solid fa-xmark position-absolute top-0 end-0 m-5 text-white "
+                style="font-size: 30px;"></i>
+        </a>
+        <div class="menu d-flex align-items-center justify-content-center" style="height: 100%;width: 100%;">
+            <ul class="d-flex align-items-center flex-column" style="font-size: 22px;color: #bcbcbc;">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="reservation.html">RESERVSTION</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li style="margin-top: 20px;">
+                  <a href="reservation.html">
+                    <div class="btn animate__animated animate__fadeInDown">
+                        find a table
+                    </div>
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header class="d-none d-md-flex">
+        <div class="container">
+            <div class="row">
+                <div class=" col-12 d-flex justify-content-between">
+                    <div class="col-6 head-0">
+                        <div class="pe-5">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Restaurant St, Delicious City, London 9578, UK</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Daily : 8:00 am to 10:00 pm</span>
+                        </div>
+                    </div>
+                    <div class="col-6 head-0 d-flex justify-content-end">
+                        <div class="pe-5">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+1 123-456-7890</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span><a href="#" class="">booking@resturant.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="navigation col-12">
+                    <div class="col-11 col-lg-2">
+                        <div class="logo">
+                            <a href="#"> <img src="assets/img/logo.webp" alt="" width="96px"></a>
+                        </div>
+                    </div>
+                    <div class="col-1 col-lg-7 ">
+                        <div class="r-menu text-end d-lg-none">
+                            <a href="#" id="r-menu"><i class="fa-solid fa-bars" style="font-size: 20px;"></i></a>
+                        </div>
+                        <div class="menu">
+                            <ul class="d-none  d-lg-flex justify-content-lg-around">
+                                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+           
+                <li><a href="reservation.html">RESERVSTION</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-flex   justify-content-end">
+                      
+                        <a href="reservation.html">
+                            <div class="btn "  data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
+                                find a table
+                            </div>
+                          </a>
+                              
+                            
+                            </div>
+                     
+              
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!-- -----------header-end--------- -->
+
+
+    <!-- ------------section-1-start---------- -->
+    <section>
+        <div class="header-section">
+            <div class="title col-12"data-aos="zoom-in" data-aos-delay="1000">
+                <h5 class="head-1">DELICIOUS & AMAZING</h5>
+                <div class="my-4">
+                    <img src="assets/img/div-line.webp" alt="" width="100px">
+                </div>
+                <h1 class="head-b" style="font-size: 75px;">Our Menu</h1>
+            </div>
+        </div>
+    </section>
+    <!-- ------------section-1-end---------- -->
+
+    <!-- --------------appetizers-start------------- -->
+    <section class="menu-items position-relative overflow-hidden">
+
+        <div class="bg-1 position-absolute img-fluid animate-bg" style="top: 2%;right: 0%;width: 250px;">
+            <img src="assets/img/Restaurant-Appetizers_-Hero-BG-1.webp" alt="" width="100%">
+
+        </div>
+        <div class="bg-1 position-absolute img-fluid animate-small-bg" style="top: 35%;right: 0%;width: 80px;">
+            <img src="assets/img/Restaurant-Appetizers_-Hero-BG-2.webp" alt="" width="100%">
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="title col-12 mb-5" style="text-align: center;">
+                    <h5 class="head-1">STARTER MENU</h5>
+                    <div class="my-4">
+                        <img src="assets/img/div-line.webp" alt="" width="100px">
+                    </div>
+                    <h1 class="head-b">Appetizers</h1>
+                </div>
+
+                <div class="col-12 col-lg-6 d-flex align-items-center mb-5"data-aos="fade-up"
+     data-aos-duration="3000">
+                    <div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-1.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Greek Salad</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$25.50</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Tomatoes, green
+                                    bell
+                                    pepper, sliced cucumber onion, olives, and feta cheese. </p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-2.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Lasagne</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$40.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Vegetables,
+                                    cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex "
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-3.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Butternut Pumpkin</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$10.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Typesetting
+                                    industry lorem Lorem Ipsum is simply dummy text of the priand.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex align-items-center mb-5"data-aos="fade-up"
+     data-aos-duration="3000">
+                    <div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-7.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Tokusen Wagyu</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$39.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Vegetables,
+                                    cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-8.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Olivas Rellenas</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$25.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Avocados with
+                                    crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper. </p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex "
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-9.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">
+                                        Opu Fish</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$49.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Vegetables,
+                                    cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+    <!-- --------------appetizers-end------------- -->
+
+    <!-- --------------main-dish-start------------- -->
+    <section class="menu-items position-relative overflow-hidden">
+
+
+       <div class="bg-1 position-absolute img-fluid animate-bg" style="top: 1%;left: 0%;width: 250px;">
+        <img src="assets/img/Restaurant-Main-Dishes-Hero-BG-1.webp" alt="" width="100%"
+       >
+       </div>
+       <div class="bg-1 position-absolute img-fluid animate-small-bg" style="top: 30%;left: -5%;width: 150px;">
+        <img src="assets/img/Restaurant-Main-Dishes-Hero-BG-2.webp" alt="" width="100%"
+       >
+
+       </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="title col-12 mb-5" style="text-align: center;">
+                    <h5 class="head-1">STARTER MENU</h5>
+                    <div class="my-4">
+                        <img src="assets/img/div-line.webp" alt="" width="100px">
+                    </div>
+                    <h1 class="head-b">Appetizers</h1>
+                </div>
+
+                <div class="col-12 col-lg-6 d-flex align-items-center mb-5"data-aos="fade-up"
+     data-aos-duration="3000">
+                    <div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-1.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Greek Salad</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$25.50</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Tomatoes, green
+                                    bell
+                                    pepper, sliced cucumber onion, olives, and feta cheese. </p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-2.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Lasagne</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$40.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Vegetables,
+                                    cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex "
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-3.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Butternut Pumpkin</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$10.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Typesetting
+                                    industry lorem Lorem Ipsum is simply dummy text of the priand.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex align-items-center mb-5"data-aos="fade-up"
+     data-aos-duration="3000">
+                    <div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-7.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Tokusen Wagyu</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$39.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Vegetables,
+                                    cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-8.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Olivas Rellenas</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$25.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Avocados with
+                                    crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper. </p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex "
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-9.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">
+                                        Opu Fish</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$49.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Vegetables,
+                                    cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+    <!-- --------------main-dish-end------------- -->
+
+    <!-- --------------drinks-start------------- -->
+    <section class="menu-items position-relative overflow-hidden">
+
+
+     <div class="bg-1 position-absolute img-fluid animate-bg" style="top: 5%;right: 0%;width: 250px;">
+        <img src="assets/img/Restaurant-Appetizers_-Hero-BG-1.webp" alt="" width="100%"
+      >
+     </div>
+      <div class="bg-1 position-absolute img-fluid animate-small-bg"
+      style="bottom: 0%;left: 0%;width: 150px;">
+        <img src="assets/img/Restaurant-Deserts-BG.webp" alt="" width="100%" >
+
+
+      </div>
+        <div class="container">
+            <div class="row">
+                <div class="title col-12 mb-5" style="text-align: center;">
+                    <h5 class="head-1">STARTER MENU</h5>
+                    <div class="my-4">
+                        <img src="assets/img/div-line.webp" alt="" width="100px">
+                    </div>
+                    <h1 class="head-b">Appetizers</h1>
+                </div>
+
+                <div class="col-12 col-lg-6 d-flex align-items-center mb-5"data-aos="fade-up"
+     data-aos-duration="3000">
+                    <div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-1.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Greek Salad</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$25.50</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Tomatoes, green
+                                    bell
+                                    pepper, sliced cucumber onion, olives, and feta cheese. </p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-2.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Lasagne</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$40.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Vegetables,
+                                    cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex "
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-3.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Butternut Pumpkin</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$10.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Typesetting
+                                    industry lorem Lorem Ipsum is simply dummy text of the priand.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex align-items-center mb-5"data-aos="fade-up"
+     data-aos-duration="3000">
+                    <div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-7.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Tokusen Wagyu</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$39.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Vegetables,
+                                    cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-8.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Olivas Rellenas</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$25.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Avocados with
+                                    crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper. </p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex "
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-9.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">
+                                        Opu Fish</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$49.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Vegetables,
+                                    cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+    <!-- --------------drinks-end------------- -->
+
+    <!-- --------------desert-start------------- -->
+    <section class="menu-items position-relative overflow-hidden">
+
+
+
+      <div  class="bg-1 position-absolute img-fluid animate-small-bg"
+      style="top: 35%;right: -5%;width: 150px;">
+        <img src="assets/img/Restaurant-Drinks-BG.webp" alt="" width="100%">
+
+
+      </div>
+        <div class="container">
+            <div class="row">
+                <div class="title col-12 mb-5" style="text-align: center;">
+                    <h5 class="head-1">STARTER MENU</h5>
+                    <div class="my-4">
+                        <img src="assets/img/div-line.webp" alt="" width="100px">
+                    </div>
+                    <h1 class="head-b">Appetizers</h1>
+                </div>
+
+                <div class="col-12 col-lg-6 d-flex align-items-center mb-5"data-aos="fade-up"
+     data-aos-duration="3000">
+                    <div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-1.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Greek Salad</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$25.50</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Tomatoes, green
+                                    bell
+                                    pepper, sliced cucumber onion, olives, and feta cheese. </p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-2.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Lasagne</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$40.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Vegetables,
+                                    cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex "
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-3.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Butternut Pumpkin</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$10.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Typesetting
+                                    industry lorem Lorem Ipsum is simply dummy text of the priand.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex align-items-center mb-5"data-aos="fade-up"
+     data-aos-duration="3000">
+                    <div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-7.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Tokusen Wagyu</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$39.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Vegetables,
+                                    cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex mb-5"
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-8.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">Olivas Rellenas</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$25.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Avocados with
+                                    crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper. </p>
+                            </div>
+
+                        </div>
+                        <div class="d-flex "
+                            style="border-right: 1px solid rgba(255, 255, 255, 0.474); padding-right: 31px;">
+                            <div class="col-3 d-flex justify-content-center align-items-center">
+                                <div class="img"
+                                    style="border-radius: 3px;overflow: hidden;width: 100px;height: 100px;">
+                                    <img src="assets/img/Restaurant-Delicios-Image-9.webp" alt="" width="100%">
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <h1 class="head-b" style="font-size: 25px;">
+                                        Opu Fish</h1>
+                                    <h1 class="head-b" style="font-size: 25px;color: #E4C590;">$49.00</h1>
+                                </div>
+                                <p style="font-size: 16px;color: #a7a7a7;word-spacing: 1px;width: 80%;">Vegetables,
+                                    cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+    <!-- --------------desert-end------------- -->
+
+    <!-- -----------footer-start---------- -->
+    <footer style="padding: 100px 0;">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-12  col-lg-3">
+                   <ul class="menu d-flex flex-column text-center ">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="reservation.html">RESERVSTION</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html" class="m-0">CONTACT US</a></li>
+                   
+                   </ul>
+                </div>
+                <div class="col-12  col-lg-6 py-5">
+                    <ul class="box text-center" style="width: 100%; background-color: #0e0d0c;padding: 100px 40px;position: relative;"data-aos="zoom-in" data-aos-anchor-placement="top-bottom"data-aos-offset="50">
+                        <div class="bg-1 position-absolute"
+                        style="top: 0%;right: 0%;height: 100%;overflow: hidden;width: 10px;">
+                        <img src="assets/img/Restaurant-Pattern-2.webp" alt="" width="20px">
+                    </div>
+                    <div class="bg-1 position-absolute"
+                        style="top: 0%;left: 0%;height: 100%;overflow: hidden;width: 10px;">
+                        <img src="assets/img/Restaurant-Pattern-2.webp" alt="" width="20px">
+                    </div>
+                      
+                        <li class="mb-4"> 
+                        <img src="assets/img/logo.webp" alt="" width="120px">
+                       </li>
+                       <li>
+                        <span>Restaurant St, Delicious City, London 9578, UK</span>
+                       </li>
+                       <li>
+                        <span>booking@domainname.com</span>
+                       </li>
+                       <li>
+                        <span>Booking Request : +88-123-123456</span>
+                       </li>
+                       <li>
+                        <span>Open : 09:00 am - 01:00 pm</span>
+                       </li>
+                       <li>
+                        <div class="my-4">
+                            <img src="assets/img/div-line.webp" alt="" width="100px" class="img-fluid">
+                        </div>
+                       </li>
+                       <li >
+                        <h1 class="head-b" style="font-size: 30px;">Get News & Offers</h1>
+                       </li>
+                       <li>
+                        <span>Subscribe us & Get <span style="font-weight: 800;">25% Off</span>.</span>
+                       </li>
+                       <li class="d-flex align-items-center" style="height: 50px;margin-top: 35px;"data-aos="fade-down"
+                       data-aos-easing="linear"
+                       data-aos-duration="1000">
+                        <input type="text" placeholder="Email.."
+                            style="border: 0; border-bottom: 1px solid grey;width: 70%;height: 100%;background-color: transparent;outline: none;">
+                        <div class="btn p-3 d-block mx-auto"
+                            style="border-radius: 1px;font-size: 12px;font-weight: 500;width: 30%;height: 100%; background-color: #E4C590; color: #0e0d0c;">Subscribe</div>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-12  col-lg-3">
+                    <ul class="menu d-flex flex-column text-center ">
+                    <li>
+                     <a href="#">FACEBOOK</a>
+                    </li>
+                    <li>
+                     <a href="#">INSTAGRAM</a>
+                    </li>
+                    <li>
+                     <a href="#">TWITTER </a>
+                    </li>
+                    <li>
+                     <a href="#">YOU TUBE</a>
+                    </li>
+                    <li>
+                     <a href="#">LINKEDIN</a>
+                    </li>
+                    <li>
+                     <a href="#">GOOGLE MAP</a>
+                    </li>
+                    
+                    </ul>
+                 </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- -----------footer-end---------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- -----bootstrap-------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+            <!-- -----------------AOS-animations------------- -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
+
+    <!-- --------------responsive-menu-------------- -->
+    <script>
+        var menu = document.getElementById("r-menu");
+        var menuSlide = document.querySelector(".Responsive-menu");
+
+
+        menuSlide.style.display = "none";
+
+        menu.addEventListener("click", function () {
+            if (menuSlide.style.display === "none") {
+                menuSlide.style.display = "flex";
+            } else {
+                menuSlide.style.display = "none";
+            }
+        });
+        function menuClose() {
+            menuSlide.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

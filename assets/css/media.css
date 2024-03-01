@@ -1,0 +1,26 @@
+@media(max-width:575px){
+
+    
+}
+
+@media (min-width: 576px) {
+    .head-b{
+        font-size: 5vw;
+    }
+}
+
+
+@media(min-width:768px){
+   
+}
+
+@media(min-width:992px){
+    
+ 
+}
+
+@media(min-width:1200px){
+  .head-b{
+    font-size: 120px;
+  }
+}

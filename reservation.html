@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticrou-Restro</title>
+
+    <!-- -------fav-icon----- -->
+    <link rel="icon" href="assets/img/favicon.png">
+    <!-- -----bootstrap-------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- ---animkate.css--------- -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="Assets/css/all.min.css">
+    <!-- -------fonts---- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Forum&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/media.css">
+    <!-- ----stylesheet---- -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- -----------header-start--------- -->
+    <div class="Responsive-menu ">
+        <a href="#">
+            <i onclick="menuClose()" class="fa-solid fa-xmark position-absolute top-0 end-0 m-5 text-white "
+                style="font-size: 30px;"></i>
+        </a>
+        <div class="menu d-flex align-items-center justify-content-center" style="height: 100%;width: 100%;">
+            <ul class="d-flex align-items-center flex-column" style="font-size: 22px;color: #bcbcbc;">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="reservation.html">RESERVSTION</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li style="margin-top: 20px;">
+                  <a href="reservation.html">
+                    <div class="btn animate__animated animate__fadeInDown">
+                        find a table
+                    </div>
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header class="d-none d-md-flex">
+        <div class="container">
+            <div class="row">
+                <div class=" col-12 d-flex justify-content-between">
+                    <div class="col-6 head-0">
+                        <div class="pe-5">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Restaurant St, Delicious City, London 9578, UK</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Daily : 8:00 am to 10:00 pm</span>
+                        </div>
+                    </div>
+                    <div class="col-6 head-0 d-flex justify-content-end">
+                        <div class="pe-5">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+1 123-456-7890</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span><a href="#" class="">booking@resturant.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="navigation col-12">
+                    <div class="col-11 col-lg-2">
+                        <div class="logo">
+                            <a href="#"> <img src="assets/img/logo.webp" alt="" width="96px"></a>
+                        </div>
+                    </div>
+                    <div class="col-1 col-lg-7 ">
+                        <div class="r-menu text-end d-lg-none">
+                            <a href="#" id="r-menu"><i class="fa-solid fa-bars" style="font-size: 20px;"></i></a>
+                        </div>
+                        <div class="menu">
+                            <ul class="d-none  d-lg-flex justify-content-lg-around">
+                                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+           
+                <li><a href="reservation.html">RESERVSTION</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-flex   justify-content-end">
+                      
+                        <a href="reservation.html">
+                            <div class="btn "  data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
+                                find a table
+                            </div>
+                          </a>
+                              
+                            
+                            </div>
+                     
+              
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!-- -----------header-end--------- -->
+
+
+    <!-- ------------section-1-start---------- -->
+    <section>
+        <div class="header-section-reserve">
+            <div class="title col-12"data-aos="zoom-in" data-aos-delay="1000">
+                <h5 class="head-1">BOOK YOUR TABLE</h5>
+                <div class="my-4">
+                    <img src="assets/img/div-line.webp" alt="" width="100px">
+                </div>
+                <h1 class="head-b" style="font-size: 75px;">Reservation</h1>
+            </div>
+        </div>
+    </section>
+    <!-- ------------section-1-end---------- -->
+
+
+    <!-- ----------------private-events-start------------- -->
+    <section style="background-color: #171819; padding: 100px 0;" class="reserve">
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-xl-6 d-flex align-items-center justify-content-center mb-5"data-aos="fade-up"
+     data-aos-duration="3000">
+                    <div class="box" style="background-color: #100e0c;width: 100%;position: relative;">
+                        <img src="assets/img/Restaurant-Pattern-2.webp" alt="" width="20px"
+                            class="bg-1 position-absolute"
+                            style="top: 0%;left: 0%;height: 100%;overflow: hidden;width: 12px;">
+
+                        <div class="title" style="text-align: center;width: 70%;margin: 0px auto;padding: 100px 0;">
+
+
+                            <h1 class="head-b" style="font-size: 50px;">Private Events</h1>
+                            <p style="font-size: 14px;color: #a7a7a7;line-height: 30px;word-spacing: 1px;">Lorem
+                                Lorem Ipsum is simply dummy printing and typeset industry lorem Ipsum has been the
+                                industrys
+                            </p>
+
+                            <p style="color: #E4C590;font-family: forum;font-size: 35px;" class="">+88-123-123456
+                            </p>
+                            <a href="reservation.html">
+                                <div class="btn">
+                                    BOOK NOW
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 mb-5"data-aos="fade-up"
+     data-aos-duration="3000">
+                    <div class="box">
+                        <img src="assets/img/Restaurant-Events-Image-1.webp" alt="" width="100%" class="img-fluid"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 mb-5"data-aos="fade-up"
+     data-aos-duration="3000">
+                    <div class="box">
+                        <img src="assets/img/Restaurant-Events-Image-2.webp" alt="" width="100%" class="img-fluid"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ----------------private-events-end------------- -->
+
+
+    <!-- ----------------banquet-hall -start------------- -->
+    <section style="background-color: #171819; padding: 50px 0;" class="reserve">
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="d-flex col-xl-6 d-xl-none align-items-center justify-content-center mb-5" data-aos="fade-up"
+     data-aos-duration="3000">
+                    <div class="box" style="background-color: #100e0c;width: 100%;position: relative;">
+                        <img src="assets/img/Restaurant-Pattern-2.webp" alt="" width="20px"
+                            class="bg-1 position-absolute"
+                            style="top: 0%;left: 0%;height: 100%;overflow: hidden;width: 12px;">
+
+                        <div class="title" style="text-align: center;width: 70%;margin: 0px auto;padding: 100px 0;">
+
+
+                            <h1 class="head-b" style="font-size: 50px;">Banquet Hall</h1>
+                            <p style="font-size: 14px;color: #a7a7a7;line-height: 30px;word-spacing: 1px;">Lorem
+                                Lorem Ipsum is simply dummy printing and typeset industry lorem Ipsum has been the
+                                industrys
+                            </p>
+
+                            <p style="color: #E4C590;font-family: forum;font-size: 35px;" class="">+88-123-123456
+                            </p>
+                            <a href="reservation.html">
+                                <div class="btn">
+                                    BOOK NOW
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 mb-5" data-aos="fade-up"
+     data-aos-duration="3000">
+                    <div class="box">
+                        <img src="assets/img/Restaurant-Banquet-Image-1.webp" alt="" width="100%" class="img-fluid"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-6 col-xl-3 mb-5" data-aos="fade-up"
+     data-aos-duration="3000">
+                    <div class="box">
+                        <img src="assets/img/Restaurant-Banquet-Image-2.webp" alt="" width="100%" class="img-fluid"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="d-none col-xl-6 d-xl-flex align-items-center justify-content-center mb-5" data-aos="fade-up"
+     data-aos-duration="3000">
+                    <div class="box" style="background-color: #100e0c;width: 100%;position: relative;">
+                        <img src="assets/img/Restaurant-Pattern-2.webp" alt="" width="20px"
+                            class="bg-1 position-absolute"
+                            style="top: 0%;left: 0%;height: 100%;overflow: hidden;width: 12px;">
+
+                        <div class="title" style="text-align: center;width: 70%;margin: 0px auto;padding: 100px 0;">
+
+
+                            <h1 class="head-b" style="font-size: 50px;">Banquet Hall</h1>
+                            <p style="font-size: 14px;color: #a7a7a7;line-height: 30px;word-spacing: 1px;">Lorem
+                                Lorem Ipsum is simply dummy printing and typeset industry lorem Ipsum has been the
+                                industrys
+                            </p>
+
+                            <p style="color: #E4C590;font-family: forum;font-size: 35px;" class="">+88-123-123456
+                            </p>
+                            <a href="reservation.html">
+                                <div class="btn">
+                                    BOOK NOW
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ----------------banquet-hall -end------------- -->
+
+    <!-- ------------------table-booking-start-------------- -->
+    <section class="booking">
+        <div class="container" data-aos="fade-up">
+           <div class="row">
+            <div class="col-12 col-xl-8">
+                <div class="box-form" style="background-color: #0e0d0c;padding: 80px 50px;">
+                    <h1 class="head-b" style="font-size: 50px;">Online Reservation</h1>
+                    <p style="font-size: 14px;color: #a7a7a7;line-height: 30px;word-spacing: 1px;" class="mb-4">Booking request <span
+                            style="color: #E4C590; font-weight: 600;">+88-123-123456</span> or fill out the order form
+                    </p>
+                    <div id="book-a-table" class="book-a-table">
+
+
+
+                        <form action="" method="post" role="form">
+                            <div class="form-row d-flex flex-wrap">
+                                <div class="col-4 form-group ">
+                                    <div class="m-2">
+                                        <input type="text" name="name" class="form-control "
+                                            style="background-color: #151616;border: 0;outline: none;color: white;"
+                                            id="name" placeholder="Your Name">
+                                    </div>
+                                </div>
+                                <div class="col-4 form-group ">
+                                    <div class="m-2">
+                                        <input type="email" class="form-control "
+                                            style="background-color: #151616;border: 0;outline: none;color: white;"
+                                            name="email" id="email" placeholder="Your Email">
+
+                                    </div>
+                                </div>
+                                <div class="col-4 form-group ">
+                                    <div class="m-2">
+                                        <input class="form-control "
+                                            style="background-color: #151616;border: 0;outline: none;color: white;"
+                                            name="phone" id="phone" placeholder="Your Phone">
+
+                                    </div>
+                                </div>
+                                <div class="col-4 form-group ">
+                                    <div class="m-2">
+                                        <input type="date" name="date" class="form-control "
+                                            style="background-color: #151616;border: 0;outline: none;color: white;"
+                                            id="date" placeholder="Date">
+
+                                    </div>
+                                </div>
+                                <div class="col-4 form-group ">
+                                    <div class="m-2">
+                                        <input type="time" class="form-control "
+                                            style="background-color: #151616;border: 0;outline: none;color: white;"
+                                            name="time" id="time" placeholder="Time">
+
+                                    </div>
+                                </div>
+                                <div class="col-4 form-group ">
+                                    <div class="m-2">
+                                        <input type="number" class="form-control "
+                                            style="background-color: #151616;border: 0;outline: none;color: white;"
+                                            name="people" id="people" placeholder="No. of people">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="m-2">
+                                    <textarea class="form-control"
+                                        style="background-color: #151616;border: 0;outline: none;color: white;"
+                                        name="message" placeholder="Message"></textarea>
+
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary float-right mt-5">Book a Table</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-4">
+                <div class="box-2" style="background-color: #100e0c;width: 100%;position: relative;">
+                    <img src="assets/img/Restaurant-Pattern-2.webp" alt="" width="20px"
+                        class="bg-1 position-absolute"
+                        style="top: 0%;left: 0%;height: 100%;overflow: hidden;width: 12px;">
+
+                    <div class="title" style="text-align: center;width: 80%;margin: 0px auto;padding: 80px 0;">
+
+
+                        <h1 class="head-b" style="font-size: 50px;">Contact Us</h1>
+                        <h5 class="head-1" style="color: white;letter-spacing: 0;">Booking request</h5> 
+                        <h1 class="head-b" style="font-size: 35px;color: #E4C590;">+88-123-123456</h1>
+                        <div class="my-4">
+                            <img src="assets/img/div-line.webp" alt="" width="100px">
+                        </div>
+                        <h1 class="head-b" style="font-size: 27px;">Location</h1>
+                     
+                        <p style="font-size: 14px;color: #a7a7a7;line-height: 30px;word-spacing: 1px;">Restaurant St, Delicious City, London 9578, UK
+                        </p>
+                        <h1 class="head-b" style="font-size: 27px;">Lunch time</h1>
+                     
+                        <p style="font-size: 14px;color: #a7a7a7;line-height: 30px;word-spacing: 1px;">11.00 am – 2.30pm
+                        </p>
+                        <h1 class="head-b" style="font-size: 27px;">Dinner time</h1>
+                     
+                        <p style="font-size: 14px;color: #a7a7a7;line-height: 30px;word-spacing: 1px;">5.00 pm - 11.00pm
+                        </p>
+
+                       
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+    <!-- ------------------table-booking-end-------------- -->
+
+
+
+    <!-- -----------footer-start---------- -->
+    <footer style="padding: 100px 0;">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-12  col-lg-3">
+                   <ul class="menu d-flex flex-column text-center ">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="reservation.html">RESERVSTION</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html" class="m-0">CONTACT US</a></li>
+                   
+                   </ul>
+                </div>
+                <div class="col-12  col-lg-6 py-5">
+                    <ul class="box text-center" style="width: 100%; background-color: #0e0d0c;padding: 100px 40px;position: relative;"data-aos="zoom-in" data-aos-anchor-placement="top-bottom"data-aos-offset="50">
+                        <div class="bg-1 position-absolute"
+                        style="top: 0%;right: 0%;height: 100%;overflow: hidden;width: 10px;">
+                        <img src="assets/img/Restaurant-Pattern-2.webp" alt="" width="20px">
+                    </div>
+                    <div class="bg-1 position-absolute"
+                        style="top: 0%;left: 0%;height: 100%;overflow: hidden;width: 10px;">
+                        <img src="assets/img/Restaurant-Pattern-2.webp" alt="" width="20px">
+                    </div>
+                      
+                        <li class="mb-4"> 
+                        <img src="assets/img/logo.webp" alt="" width="120px">
+                       </li>
+                       <li>
+                        <span>Restaurant St, Delicious City, London 9578, UK</span>
+                       </li>
+                       <li>
+                        <span>booking@domainname.com</span>
+                       </li>
+                       <li>
+                        <span>Booking Request : +88-123-123456</span>
+                       </li>
+                       <li>
+                        <span>Open : 09:00 am - 01:00 pm</span>
+                       </li>
+                       <li>
+                        <div class="my-4">
+                            <img src="assets/img/div-line.webp" alt="" width="100px" class="img-fluid">
+                        </div>
+                       </li>
+                       <li >
+                        <h1 class="head-b" style="font-size: 30px;">Get News & Offers</h1>
+                       </li>
+                       <li>
+                        <span>Subscribe us & Get <span style="font-weight: 800;">25% Off</span>.</span>
+                       </li>
+                       <li class="d-flex align-items-center" style="height: 50px;margin-top: 35px;"data-aos="fade-down"
+                       data-aos-easing="linear"
+                       data-aos-duration="1000">
+                        <input type="text" placeholder="Email.."
+                            style="border: 0; border-bottom: 1px solid grey;width: 70%;height: 100%;background-color: transparent;outline: none;">
+                        <div class="btn p-3 d-block mx-auto"
+                            style="border-radius: 1px;font-size: 12px;font-weight: 500;width: 30%;height: 100%; background-color: #E4C590; color: #0e0d0c;">Subscribe</div>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-12  col-lg-3">
+                    <ul class="menu d-flex flex-column text-center ">
+                    <li>
+                     <a href="#">FACEBOOK</a>
+                    </li>
+                    <li>
+                     <a href="#">INSTAGRAM</a>
+                    </li>
+                    <li>
+                     <a href="#">TWITTER </a>
+                    </li>
+                    <li>
+                     <a href="#">YOU TUBE</a>
+                    </li>
+                    <li>
+                     <a href="#">LINKEDIN</a>
+                    </li>
+                    <li>
+                     <a href="#">GOOGLE MAP</a>
+                    </li>
+                    
+                    </ul>
+                 </div>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- -----------footer-end---------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- -----bootstrap-------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <!-- -----------------AOS-animations------------- -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+    
+
+
+    <!-- --------------responsive-menu-------------- -->
+    <script>
+        var menu = document.getElementById("r-menu");
+        var menuSlide = document.querySelector(".Responsive-menu");
+
+
+        menuSlide.style.display = "none";
+
+        menu.addEventListener("click", function () {
+            if (menuSlide.style.display === "none") {
+                menuSlide.style.display = "flex";
+            } else {
+                menuSlide.style.display = "none";
+            }
+        });
+        function menuClose() {
+            menuSlide.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
