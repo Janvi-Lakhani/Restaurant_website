@@ -101,8 +101,7 @@ nav .btn:hover {
 .sec-1 .head-b {
   color: white;
   font-family: forum;
-  font-size: 60px;
-  font-size: 120px;
+  font-size: clamp(3.75rem, 1.875rem + 6vw, 7.5rem);
 }
 
 .head-1 {
@@ -117,12 +116,12 @@ nav .btn:hover {
 .head-b {
   color: white;
   font-family: forum;
-  font-size: 60px;
+  font-size: clamp(3.75rem, 1.875rem + 6vw, 7.5rem);
 }
 
 .text-slider {
   color: white;
-  font-size: 20px;
+  font-size: clamp(1.125rem, 1.0625rem + 0.2vw, 1.25rem);
 }
 
 .btn {
@@ -191,7 +190,7 @@ nav .btn:hover {
 .exp .head-b {
   color: white;
   font-family: forum;
-  font-size: 60px;
+  font-size: clamp(3.75rem, 1.875rem + 6vw, 7.5rem);
   font-size: 60px;
 }
 .exp .play {

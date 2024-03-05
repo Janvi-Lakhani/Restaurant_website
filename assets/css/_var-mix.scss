@@ -45,5 +45,5 @@ $black-bg:#0e0d0c;
 @mixin head-main{
     color: $white;
     font-family: forum;
-    font-size: 60px;
+    font-size:  clamp(3.75rem, 1.875rem + 6vw, 7.5rem);
 }

@@ -14,6 +14,7 @@ li {
 
 body {
     font-family: 'DM Sans', sans-serif;
+  
 }
 a:hover{
     color: white !important;
@@ -103,7 +104,7 @@ nav {
 
     .head-b {
         @include head-main;
-        font-size: 120px;
+     
     }
 
 }
@@ -119,7 +120,7 @@ nav {
 
 .text-slider {
     color: $white;
-    font-size: 20px;
+    font-size: clamp(1.125rem, 1.0625rem + 0.2vw, 1.25rem);
 }
 
 .btn {
