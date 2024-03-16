@@ -77,7 +77,7 @@ const openModal = () => {
 const submitAddReview = (e) => {
   // console.log(e);
   console.log('Form subbmitted!');
-  // e.preventDefault();
+  e.preventDefault();
   closeModal();
 };
 
