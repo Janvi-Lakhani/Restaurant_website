@@ -78,6 +78,67 @@ const submitAddReview = (e) => {
   // console.log(e);
   console.log('Form subbmitted!');
   e.preventDefault();
+  var name = document.getElementById("reviewName").value;
+  var stars = parseInt(document.querySelector('input[name="rate"]:checked').value);
+  var comment = document.getElementById("reviewComments").value;
+
+  try {
+    const response = await fetch("http://localhost:3000/submit-review", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, stars, comment }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Server responded with status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    console.log(data);
+    if (stars >= 4 && stars <= 5) {
+      window.location.href = `confirmation.html?message=${encodeURIComponent(
+        data.message
+      )}`;
+    } else {
+      console.log("below 4");
+      const additionalReview = window.confirm(
+        "Your review was below 4 stars. Would you like to provide more details for improvement?"
+      );
+
+      if (additionalReview) {
+        // Prompt user for additional feedback
+        const additionalComment = prompt("Please provide additional feedback:");
+
+        if (additionalComment) {
+          // Submit the additional review to the server
+          const additionalResponse = await fetch(
+            "http://localhost:3000/submit-additional-review",
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ name, stars, comment: additionalComment }),
+            }
+          );
+
+          if (additionalResponse.ok) {
+            // Parse the server response for additional reviews
+            const additionalData = await additionalResponse.json();
+            alert(
+              "Additional review submitted. Thank you for you  feedback! We will definitely consider your feedback."
+            );
+          } else {
+            console.error(
+              "Error submitting additional review:",
+              additionalResponse.status
+            );
+          }
+        }
+      }
+    }
+  } catch (error) {
+    console.error("Error submitting Review:", error.message);
+    alert("Failed to submit review. Please try again later");
+  }
   closeModal();
 };
 
